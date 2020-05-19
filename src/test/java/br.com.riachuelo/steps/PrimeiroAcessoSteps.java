@@ -5,7 +5,7 @@ import cucumber.api.java8.Pt;
 
 import static org.junit.Assert.assertEquals;
 
-public class PrimeiroAcessoSteps extends BaseSteps implements Pt {
+public class PrimeiroAcessoSteps implements Pt {
 	public PrimeiroAcessoSteps() {
 
         Dado("que eu esteja acessando a tela de primeiro acesso", () -> {

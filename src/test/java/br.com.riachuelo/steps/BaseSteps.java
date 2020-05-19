@@ -11,6 +11,7 @@ import static br.com.riachuelo.utils.Browser.driver;
 public class BaseSteps implements Pt {
 	public BaseSteps() {
 		Before(() -> {
+			//driver.navigate().to("http://rch-sl04:4200/agendamento/#/login?token=GRP-US-S-PAG-ADMCD");
 			System.setProperty("webdriver.chrome.driver", "driver/chromedriver.exe");
 			Browser.loadPage("http://rch-sl04:4200/agendamento/#/login?token=GRP-US-S-PAG-ADMCD");
 		});

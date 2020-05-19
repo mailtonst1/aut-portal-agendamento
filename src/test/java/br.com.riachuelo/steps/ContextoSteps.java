@@ -1,13 +1,12 @@
-package br.com.riachuelo.steps.turnosRecebimento;
+package br.com.riachuelo.steps;
 
-import br.com.riachuelo.steps.BaseSteps;
 import cucumber.api.java8.Pt;
 
 import java.util.concurrent.TimeUnit;
 
 import static br.com.riachuelo.utils.Browser.driver;
 
-public class ContextoSteps extends BaseSteps implements Pt{
+public class ContextoSteps implements Pt {
 
     public ContextoSteps(){
 

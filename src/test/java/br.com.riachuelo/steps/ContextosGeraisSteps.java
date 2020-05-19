@@ -7,7 +7,7 @@ import br.com.riachuelo.pageobjects.TurnosRecebimentoPage;
 import cucumber.api.java8.Pt;
 import org.junit.Assert;
 
-public class ContextosGeraisSteps extends BaseSteps implements Pt{
+public class ContextosGeraisSteps implements Pt{
     public ContextosGeraisSteps(){
 
         /* Feature:  Calendario Recebimento*/

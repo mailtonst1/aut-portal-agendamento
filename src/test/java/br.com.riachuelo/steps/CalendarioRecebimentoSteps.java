@@ -1,16 +1,15 @@
-package br.com.riachuelo.steps.calendarioRecebimento;
+package br.com.riachuelo.steps;
 
 import br.com.riachuelo.pageobjects.CalendarioRecebimentoPage;
 import br.com.riachuelo.pageobjects.HomePage;
 import br.com.riachuelo.pageobjects.MenuPage;
-import br.com.riachuelo.steps.BaseSteps;
 import cucumber.api.java8.Pt;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-public class CalendarioRecebimentoSteps extends BaseSteps implements Pt{
-    public CalendarioRecebimentoSteps() throws InterruptedException {
+public class CalendarioRecebimentoSteps implements Pt{
+    public CalendarioRecebimentoSteps(){
 
         Dado("^que eu esteja na página de Calendário de Recebimento$", () -> {
             HomePage.clicoBtnMenu();
