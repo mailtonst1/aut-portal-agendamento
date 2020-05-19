@@ -4,7 +4,7 @@ import br.com.riachuelo.pageobjects.LoginPage;
 import cucumber.api.java8.Pt;
 import static org.junit.Assert.assertEquals;
 
-public class LoginSteps extends BaseSteps implements Pt {
+public class LoginSteps implements Pt {
 	public LoginSteps() {
 
 		Dado("^que preencho o login com CNPJ (.*) e a senha (.*) validos$", (String cnpj, String senha) -> {

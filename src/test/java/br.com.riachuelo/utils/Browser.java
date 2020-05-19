@@ -14,17 +14,37 @@ public class Browser {
 	public static WebDriverWait waitNot;
 
 	synchronized static WebDriver getCurrentDriver() {
+
+		/*try {
+			driver = new ChromeDriver();
+			DesiredCapabilities cap = DesiredCapabilities.chrome();
+			cap.setVersion("81.0.4044.138");
+			try {
+				driver = new RemoteWebDriver(new URL("http://172.31.148.17:4444/wd/hub"), cap);
+			} catch (MalformedURLException e) {
+				e.printStackTrace();
+			/
+			wait = new WebDriverWait(driver, 50);
+			waitNot = new WebDriverWait(driver, 1);
+			driver.manage().window().maximize();
+			driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+		} finally {
+			Runtime.getRuntime().addShutdownHook(new Thread(new BrowserCleanup()));
+		}
+		return driver;*/
+
 		if (driver == null) {
 			try {
 				driver = new ChromeDriver();
 				wait = new WebDriverWait(driver, 50);
 				waitNot = new WebDriverWait(driver, 1);
 				driver.manage().window().maximize();
-				driver.manage().timeouts().pageLoadTimeout(70, TimeUnit.SECONDS);
+				driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 			} finally {
 				Runtime.getRuntime().addShutdownHook(new Thread(new BrowserCleanup()));
 			}
 		}
+
 		return driver;
 	}
 

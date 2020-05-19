@@ -9,7 +9,7 @@ import org.junit.Assert;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-public class TurnosRecebimentoSteps extends BaseSteps implements Pt{
+public class TurnosRecebimentoSteps implements Pt{
     public TurnosRecebimentoSteps(){
 
         Dado("^que exista um turno cadastrado no sistema$", () -> {
