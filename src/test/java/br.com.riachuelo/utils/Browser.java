@@ -64,7 +64,6 @@ public class Browser {
 				getCurrentDriver().quit();
 				driver = null;
 			} catch (UnreachableBrowserException e) {
-				System.out.println(e);
 			}
 		}
 	}
