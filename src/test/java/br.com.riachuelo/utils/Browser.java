@@ -39,7 +39,7 @@ public class Browser {
 				wait = new WebDriverWait(driver, 50);
 				waitNot = new WebDriverWait(driver, 1);
 				driver.manage().window().maximize();
-				driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+				driver.manage().timeouts().pageLoadTimeout(90, TimeUnit.SECONDS);
 			} finally {
 				Runtime.getRuntime().addShutdownHook(new Thread(new BrowserCleanup()));
 			}
